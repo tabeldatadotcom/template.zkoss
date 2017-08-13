@@ -1,4 +1,4 @@
-package com.tabeldata.template.zkoss;
+package com.tabeldata;
 
 import org.zkoss.bind.annotation.Command;
 import org.zkoss.bind.annotation.Init;
