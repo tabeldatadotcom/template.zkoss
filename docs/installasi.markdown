@@ -122,7 +122,6 @@ di dalam folder `$TOMCAT_HOME/conf/tomcat-users.xml` seperti berikut:
 -->
 </tomcat-users>
 ```
-
 Kemudian anda ubah menjadi seperti berikut:
 
 ```xml
