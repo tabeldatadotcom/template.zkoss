@@ -2,6 +2,7 @@ package com.tabeldata.test;
 
 import com.tabeldata.config.DBSource;
 import junit.framework.TestCase;
+import org.junit.Test;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -13,6 +14,7 @@ public class DbConnectionTest extends TestCase {
         super.setUp();
     }
 
+    @Test
     public void testConnectionValid() throws SQLException {
         DataSource dataSource = DBSource.getDatasource();
         Connection connection = dataSource.getConnection();
