@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class NasabahRepository {
 
+
     private NasabahDao nasabahDao;
 
     /**
@@ -59,7 +60,8 @@ public class NasabahRepository {
             e.printStackTrace();
             try {
 //             TODO jika ada error kembalikan ke semula dengan rollback
-                connection.rollback();
+                if (connection != null)
+                    connection.rollback();
             } catch (SQLException e1) {
                 e1.printStackTrace();
             }
